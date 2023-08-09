@@ -22,7 +22,11 @@
 
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
+        
+ <<div class="g-recaptcha" id="recaptcha"
+                                    data-sitekey="6LdA_ZEnAAAAACx12pKqbGbCDIOhoMw5TkTR9xsw">
 
+                                </div>
         <input type="submit" value="Submit" onclick="sendMail()">
     </div>
 
@@ -62,6 +66,7 @@
             emailjs.init("VjePc0_vnMbJ--bK9");
         })();
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
